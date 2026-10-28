@@ -1,0 +1,33 @@
+export const AgentState = Object.freeze({
+  OFFLINE: 'OFFLINE',
+  AVAILABLE: 'AVAILABLE',
+  RESERVED: 'RESERVED',
+  DIALING: 'DIALING',
+  CONNECTED: 'CONNECTED',
+  WRAP_UP: 'WRAP_UP',
+  PAUSED: 'PAUSED'
+});
+
+export const CallState = Object.freeze({
+  QUEUED: 'QUEUED',
+  RESERVED: 'RESERVED',
+  INITIATED: 'INITIATED',
+  RINGING: 'RINGING',
+  ANSWERED: 'ANSWERED',
+  CONNECTED: 'CONNECTED',
+  COMPLETED: 'COMPLETED',
+  FAILED: 'FAILED',
+  CANCELLED: 'CANCELLED'
+});
+
+export const DialingMode = Object.freeze({
+  PROGRESSIVE: 'PROGRESSIVE',
+  PREDICTIVE: 'PREDICTIVE'
+});
+
+export const SafetyDecisionType = Object.freeze({
+  APPROVED: 'APPROVED',
+  REDUCED: 'REDUCED',
+  REJECTED: 'REJECTED',
+  PROGRESSIVE_FALLBACK: 'PROGRESSIVE_FALLBACK'
+});
